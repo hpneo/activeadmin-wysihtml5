@@ -402,7 +402,10 @@ var wysihtml5ParserRules = {
             "rename_tag": "span"
         },
         "embed": {
-            "remove": 1
+            "remove": 0
+        },
+        "iframe": {
+            "remove": 0
         },
         "hgroup": {
             "rename_tag": "div"
@@ -478,7 +481,7 @@ var wysihtml5ParserRules = {
             "set_class": "wysiwyg-text-align-center"
         },
         "audio": {
-            "remove": 1
+            "remove": 0
         },
         "datalist": {
             "rename_tag": "span"
