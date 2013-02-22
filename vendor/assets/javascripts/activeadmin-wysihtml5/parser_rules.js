@@ -405,7 +405,13 @@ var wysihtml5ParserRules = {
             "remove": 0
         },
         "iframe": {
-            "remove": 0
+            "check_attributes": {
+                "src":"url",
+                "width":"numbers",
+                "height":"numbers",
+                "frameborder":"numbers"
+            },
+            "allow_attributes": ["src", "width", "height", "frameborder", "allowfullscreen"]
         },
         "hgroup": {
             "rename_tag": "div"
